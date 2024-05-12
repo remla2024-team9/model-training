@@ -80,17 +80,17 @@ stages:
       size: 93921671
     - path: src/data_split.py
       hash: md5
-      md5: ee14f0c9ff3996ba3980aaf9eafa5d35
-      size: 942
+      md5: f3af203f622eaff800ad537be693f073
+      size: 1285
     outs:
     - path: data/interim/train_features.txt
       hash: md5
-      md5: 761b3fe3977c171bc5451c08d217f9cb
-      size: 83350996
+      md5: e30e89161e21482d56537c6d0889db94
+      size: 84396770
     - path: data/interim/train_labels.txt
       hash: md5
-      md5: a1baa255faeadb22c2b820464989699e
-      size: 10570508
+      md5: a2628fb8ca50c89fe1250772b8a50206
+      size: 11616282
   split_test_data:
     cmd: python src/data_split.py data/raw/test.txt data/interim/test_features.txt
       data/interim/test_labels.txt
@@ -174,8 +174,8 @@ stages:
     deps:
     - path: src/data_downloader.py
       hash: md5
-      md5: b6ab00ac0af65de5ecaad165cf64d03a
-      size: 1550
+      md5: 4a2b0dd03fc37ce12666bc33c7dce6a4
+      size: 1764
     outs:
     - path: data/raw/test.txt
       hash: md5
